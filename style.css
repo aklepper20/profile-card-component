@@ -76,6 +76,7 @@ h4, .footer-number {
   left: 120px;
   background-image: url("./images/image-victor.jpg");
   background-position: top 80% left 50%;
+  background-size: contain;
 }
 
 .profile-info {
