@@ -25,14 +25,14 @@ body {
 }
 
 .bottom-img {
-  transform: translate(56%, 35%);
+  transform: translate(56%, 38%);
 }
 
 .overlay {
   height: 100vh;
   width: 100vw;
   background-color: hsl(185, 75%, 39%);
-  opacity: 0.3;
+  opacity: 1;
   position: absolute;
 }
 
@@ -51,7 +51,7 @@ h4, .footer-number {
 
 .container {
   width: 330px;
-  height: 360px;
+  height: 358px;
   display: flex;
   flex-direction: column;
   border-radius: 18px;
@@ -60,7 +60,7 @@ h4, .footer-number {
 }
 
 .profile-image {
-  flex: 43%;
+  flex: 38%;
   background-image: url("./images/bg-pattern-card.svg");
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
@@ -79,7 +79,7 @@ h4, .footer-number {
 }
 
 .profile-info {
-  flex: 40%;
+  flex: 35%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,10 +93,12 @@ h4, .footer-number {
 p {
   margin-top: 8px;
   font-size: smaller;
+  color: hsl(229, 23%, 23%);
 }
 
 span {
   margin-left: 8px;
+  color: hsl(229, 23%, 23%);
 }
 
 .footer-container {
@@ -104,7 +106,7 @@ span {
   padding-top: 25px;
   display: flex;
   justify-content: space-evenly;
-  border-top: 1px solid rgba(0,0,0,0.1);
+  border-top: 1px solid hsl(227, 10%, 76%);
 }
 
 .footer-number {
