@@ -22,12 +22,10 @@ body {
 
 .top-img {
   transform: translate(-56%, -35%);
-
 }
 
 .bottom-img {
-
-
+  transform: translate(56%, 35%);
 }
 
 .overlay {
