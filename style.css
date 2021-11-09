@@ -6,7 +6,8 @@
 body {
   height: 100vh;
   width: 100vw;
-  background-repeat: repeat;
+  background-image: url("./images/background.jpg");
+  object-fit: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,13 +29,13 @@ body {
   transform: translate(56%, 38%);
 }
 
-.overlay {
+/* .overlay {
   height: 100vh;
   width: 100vw;
   background-color: hsl(185, 75%, 39%);
   opacity: 1;
   position: absolute;
-}
+} */
 
 h4, .footer-number {
   font-weight: 700;
@@ -66,7 +67,8 @@ h4 {
 
 .profile-image {
   flex: 40%;
-  background-image: url("./images/bg-pattern-card.svg");
+  background-image: url("./images/Joshua-Tree-National-Park.jpg");
+  object-fit: cover;
   border-top-left-radius: 18px;
   border-top-right-radius: 18px;
 }
