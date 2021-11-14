@@ -13,7 +13,6 @@ let dog = {
     }
 };
 
-
 let cat = {
     name: "Mochi",
     age: 1,
@@ -34,32 +33,40 @@ let cat = {
 
 catProfile();
 
+let name = document.getElementById('name');
+let age = document.getElementsByClassName('age')[0];
+let location = document.getElementsByTagName('p')[0];
+let bannerImg = document.getElementsByClassName('profile-image')[0];
+let profileImg = document.getElementsByClassName('profile-pic')[0];
+let backgroundColor = document.body;
+let followers = document.getElementsByClassName('footer-number')[0];
+let likes = document.getElementsByClassName('footer-number')[1];
+let posts = document.getElementsByClassName('footer-number')[2];
+
 function dogProfile() {
-    document.getElementById('name').innerHTML = dog.name;
-    document.getElementsByClassName('age')[0].innerHTML = dog.age;
-    document.getElementsByTagName('p')[0].innerHTML = dog.location;
-    document.getElementsByClassName('profile-image')[0].style.backgroundImage = 'none';
-    document.getElementsByClassName('profile-image')[0].style.backgroundImage = dog.bannerImg;
-    document.getElementsByClassName('profile-pic')[0].style.backgroundImage = `url(${dog.profileImg})`;
-    document.body.style.backgroundColor = dog.backgroundColor;
-    document.body.style.backgroundImage = 'none';
-    document.getElementsByClassName('footer-number')[0].innerHTML = dog.stats.followers;
-    document.getElementsByClassName('footer-number')[1].innerHTML = dog.stats.likes;
-    document.getElementsByClassName('footer-number')[2].innerHTML = dog.stats.posts;
+    name.innerHTML = dog.name;
+    age.innerHTML = dog.age;
+    location.innerHTML = dog.location;
+    bannerImg.style.backgroundImage = dog.bannerImg;
+    profileImg.style.backgroundImage = `url(${dog.profileImg})`;
+    backgroundColor.style.backgroundColor = dog.backgroundColor;
+    backgroundColor.style.backgroundImage = 'none';
+    followers.innerHTML = dog.stats.followers;
+    likes.innerHTML = dog.stats.likes;
+    posts.innerHTML = dog.stats.posts;
 }
 
 function catProfile() {
-    document.getElementById('name').innerHTML = cat.name;
-    document.getElementsByClassName('age')[0].innerHTML = cat.age;
-    document.getElementsByTagName('p')[0].innerHTML = cat.location;
-    document.getElementsByClassName('profile-image')[0].style.backgroundImage = 'none';
-    document.getElementsByClassName('profile-image')[0].style.backgroundImage = cat.bannerImg;
-    document.getElementsByClassName('profile-pic')[0].style.backgroundImage = `url(${cat.profileImg})`;
-    document.body.style.backgroundColor = cat.backgroundColor;
-    document.body.style.backgroundImage = 'none';
-    document.getElementsByClassName('footer-number')[0].innerHTML = cat.stats.followers;
-    document.getElementsByClassName('footer-number')[1].innerHTML = cat.stats.likes;
-    document.getElementsByClassName('footer-number')[2].innerHTML = cat.stats.posts;
+    name.innerHTML = cat.name;
+    age.innerHTML = cat.age;
+    location.innerHTML = cat.location;
+    bannerImg.style.backgroundImage = cat.bannerImg;
+    profileImg.style.backgroundImage = `url(${cat.profileImg})`;
+    backgroundColor.style.backgroundColor = cat.backgroundColor;
+    backgroundColor.style.backgroundImage = 'none';
+    followers.innerHTML = cat.stats.followers;
+    likes.innerHTML = cat.stats.likes;
+    posts.innerHTML = cat.stats.posts;
 }
 
 let container = document.body;
