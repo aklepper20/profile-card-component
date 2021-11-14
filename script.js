@@ -1,4 +1,4 @@
-
+console.log('hi')
 let dog = {
     name: "Steve",
     age: 1,
@@ -31,11 +31,9 @@ let cat = {
     }
 }
 
-catProfile();
-
 let name = document.getElementById('name');
 let age = document.getElementsByClassName('age')[0];
-let location = document.getElementsByTagName('p')[0];
+let locationOf = document.getElementsByTagName('p')[0];
 let bannerImg = document.getElementsByClassName('profile-image')[0];
 let profileImg = document.getElementsByClassName('profile-pic')[0];
 let backgroundColor = document.body;
@@ -46,7 +44,8 @@ let posts = document.getElementsByClassName('footer-number')[2];
 function dogProfile() {
     name.innerHTML = dog.name;
     age.innerHTML = dog.age;
-    location.innerHTML = dog.location;
+    locationOf.innerHTML = dog.location;
+    bannerImg.style.backgroundImage = 'none';
     bannerImg.style.backgroundImage = dog.bannerImg;
     profileImg.style.backgroundImage = `url(${dog.profileImg})`;
     backgroundColor.style.backgroundColor = dog.backgroundColor;
@@ -59,7 +58,8 @@ function dogProfile() {
 function catProfile() {
     name.innerHTML = cat.name;
     age.innerHTML = cat.age;
-    location.innerHTML = cat.location;
+    locationOf.innerHTML = cat.location;
+    bannerImg.style.backgroundImage = 'none';
     bannerImg.style.backgroundImage = cat.bannerImg;
     profileImg.style.backgroundImage = `url(${cat.profileImg})`;
     backgroundColor.style.backgroundColor = cat.backgroundColor;
@@ -68,6 +68,8 @@ function catProfile() {
     likes.innerHTML = cat.stats.likes;
     posts.innerHTML = cat.stats.posts;
 }
+
+catProfile();
 
 let container = document.body;
 let switchBtn = document.createElement("button");
@@ -82,7 +84,7 @@ container.style.display = 'flex';
 container.style.flexDirection = 'column';
 
 switchBtn.addEventListener('click', function() {
-    document.getElementById('name').innerHTML == cat.name ? dogProfile() : catProfile();
+    name.innerHTML == cat.name ? dogProfile() : catProfile();
 });
 
 // switchBtn.addEventListener('click', function() {
