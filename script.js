@@ -32,9 +32,9 @@ let cat = {
     }
 }
 
-catProfile(cat);
+catProfile();
 
-function dogProfile(dog) {
+function dogProfile() {
     document.getElementById('name').innerHTML = dog.name;
     document.getElementsByClassName('age')[0].innerHTML = dog.age;
     document.getElementsByTagName('p')[0].innerHTML = dog.location;
@@ -48,7 +48,7 @@ function dogProfile(dog) {
     document.getElementsByClassName('footer-number')[2].innerHTML = dog.stats.posts;
 }
 
-function catProfile(cat) {
+function catProfile() {
     document.getElementById('name').innerHTML = cat.name;
     document.getElementsByClassName('age')[0].innerHTML = cat.age;
     document.getElementsByTagName('p')[0].innerHTML = cat.location;
@@ -75,7 +75,7 @@ container.style.display = 'flex';
 container.style.flexDirection = 'column';
 
 switchBtn.addEventListener('click', function() {
-    document.getElementById('name').innerHTML == cat.name ? dogProfile(dog) : catProfile(cat);
+    document.getElementById('name').innerHTML == cat.name ? dogProfile() : catProfile();
 });
 
 // switchBtn.addEventListener('click', function() {
